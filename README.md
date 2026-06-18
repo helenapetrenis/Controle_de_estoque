@@ -38,12 +38,18 @@ Sistema de controle de estoque simplificado e interativo via terminal, feito par
 * Finaliza por completo a execução do sistema 
 
 
-# 🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas:
 
 *Linguagem principal* - Python 3
 
 *Estrutura de dados* - Matrizes / Listas
 
 
+## 💫 Metas para o próximo projeto:
 
+Implementar tecnologias avançadas que elevem o nível do projeto, como por exemplo: 
+
+*Exclusão Avançada por ID* 
+
+* Iria permitir ao usuário remover um produto específico do estoque utilizando apenas seu ID
 
