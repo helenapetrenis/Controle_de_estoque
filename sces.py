@@ -18,5 +18,17 @@ def Cadastrar_Produto():
     quanti_produto = input("-- Digite a quantidade do produto (numérico): ")
     local_produto = input("-- Digite a localização do produto (ex:'A-01-03'): ")
 
+# Lista com os dados do produto a ser cadastrado
 
+    Novo_Produto = [id_Produto, nome_produto, int(quanti_produto), local_produto]
+    Matriz_Produtos.append(Novo_Produto)
+    print("-- Produto cadastrado com sucesso! ✅")
 
+## Listando os produtos cadastrados
+
+def Listar_Produtos():
+    global Matriz_Produtos
+    print(f"-- Listando todos os produtos cadastrados: {Matriz_Produtos}:")
+    for produto in Matriz_Produtos:
+        print(f"ID: {produto[0]} | Nome: {produto[1]} | Quantidade: {produto[2]} | Localização: {produto[3]}")
+ 
