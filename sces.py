@@ -31,4 +31,19 @@ def Listar_Produtos():
     print(f"-- Listando todos os produtos cadastrados: {Matriz_Produtos}:")
     for produto in Matriz_Produtos:
         print(f"ID: {produto[0]} | Nome: {produto[1]} | Quantidade: {produto[2]} | Localização: {produto[3]}")
+
+## Buscar produto por ID
+
+def Buscar_ID_Produto():
+    global Matriz_Produtos
+    id_Produto = input("-- Digite o ID do produto que deseja procurar: ")
+    
+    for produto in Matriz_Produtos:
+        if produto[0] == id_Produto:
+            print(f"id do produto: {id_Produto}")
+            print(f"Nome: {produto[1]} | Qtd: {produto[2]} | Local: {produto[3]}")
+            
+        
+    print("-- Produto não encontrado! ❌")
+
  
