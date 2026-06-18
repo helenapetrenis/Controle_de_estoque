@@ -21,7 +21,14 @@ def Cadastrar_Produto():
     print("\n--- CADASTRAR NOVO PRODUTO ---")
     id_Produto = input("-- Digite o id do produto (numérico): ")
     nome_produto = input("-- Digite o nome do produto (texto): ")
-    quanti_produto = input("-- Digite a quantidade do produto (numérico): ")
+
+    quanti_produto = int(input("-- Digite a quantidade do produto (numérico): "))
+
+    if quanti_produto < 0:
+        print("\nNúmeros negativos são proibidos! ❌")
+        Travar_Menu()
+        return
+        
     local_produto = input("-- Digite a localização do produto (ex:'A-01-03'): ")
 
 
