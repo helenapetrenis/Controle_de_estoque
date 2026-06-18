@@ -1,12 +1,22 @@
 ## Definindo as variáveis
+
 Matriz_Produtos = [
-    [], ## ID do Produto (numérico)
-    [""], ## Nome do Produto (texto)
-    [], ## Quantidade em Estoque (numérico)
-    [""] ## Localização (texto)
+    []
 ]
 
-print("\n------Sistema de Controle de Estoque Simplificado (SCES)-----")
+## Início do programa
 
-print("\n--Escolha a opção desejada:")
-input(f"| 1. Adicionar Produto | 2. Listar Todos os Produtos | 3. Buscar Produto por ID | 4. Atualizar Estoque | 5. Sair do Programa |")
+print("\n------ Sistema de Controle de Estoque Simplificado (SCES) -----")
+
+
+## Cadastrando novo produto
+
+def Cadastrar_Produto():
+    global Matriz_Produtos
+    id_Produto = input("-- Digite o id do produto (numérico): ")
+    nome_produto = input("-- Digite o nome do produto (texto): ")
+    quanti_produto = input("-- Digite a quantidade do produto (numérico): ")
+    local_produto = input("-- Digite a localização do produto (ex:'A-01-03'): ")
+
+
+
