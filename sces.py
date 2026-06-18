@@ -55,4 +55,33 @@ def Buscar_ID_Produto():
 def Atualizar_Estoque():
     global Matriz_Produtos
     id_Produto = input("-- Digite o ID do produto que deseja atualizar (numérico):")
-    
+
+
+## Alterando a quantidade
+
+    for produto in Matriz_Produtos:
+        if produto[0] == id_Produto:  
+            Nova_Quanti = input("-- Digite a nova quantidade do produto (numérico): ")
+            produto[2] = Nova_Quanti
+            print("-- Estoque de produtos atualizado com sucesso! ✅")
+            
+
+    print("-- Produto não encontrado! ❌")
+
+
+## Rodando o menu interativo do programa
+
+while True: 
+    input(f"| 1. Cadastrar Produto | 2. Listar Todos os Produtos | 3. Buscar Produto por ID | 4. Atualizar Estoque | 5. Sair do Programa |")
+    opcao = input("-- Digite a opção desejada: ")
+    if (opcao == "1"):
+        Cadastrar_Produto()
+    elif (opcao == "2"):
+        Listar_Produtos()
+    elif (opcao == "3"):
+        Buscar_ID_Produto()      
+    elif (opcao == "4"):    
+        Atualizar_Estoque()
+    else:    
+        print("Saindo do programa...")
+        break
